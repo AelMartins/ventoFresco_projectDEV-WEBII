@@ -1,0 +1,86 @@
+:root {
+    --cor-primaria: #808080;
+}
+
+.content {
+    display: grid;
+    place-items: center;
+    width: auto;
+    height: auto;
+}
+
+.logomarca {
+    margin-top: 10px;
+    display: grid;
+    place-items: center;
+    width: auto;
+    height: auto;
+
+}
+
+img {
+    max-width:100px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    font-size: 45px;
+    color: var(--cor-primaria);
+    width: auto;
+    height: auto;
+}
+
+.line {
+    position: relative;
+    width: 150%;
+    height: 2px;
+    background-color: var(--cor-primaria);
+}
+  
+.line::before,
+.line::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--cor-primaria);
+    transform: rotate(45deg);
+}
+  
+.line::before {
+    top: -4px;
+    left: -4px;
+}
+  
+.line::after {
+    top: -4px;
+    right: -4px;
+}
+
+.perfis {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 50% 50%;
+}
+  
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+
+    background: linear-gradient(179.98deg, rgba(238, 236, 236, 0.3) 0.02%, rgba(191, 191, 191, 0.176563) 99.98%);
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+  
+    border-radius: 20px;
+}
+
+.box img {
+
+}

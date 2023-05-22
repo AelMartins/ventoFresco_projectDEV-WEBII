@@ -1,25 +1,18 @@
 <template>
-  <img alt="Logo Vento Fresco" src="./assets/logo.svg">
+  <div>
+    <login-template></login-template>
+  </div>
 </template>
 
 <script>
-// import login from './components/loginTemplate.vue'
+import LoginTemplate from './components/templates/login/index.vue'
 
 export default {
   name: 'App',
   components: {
-
+    LoginTemplate
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
